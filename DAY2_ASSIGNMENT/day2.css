@@ -1,0 +1,11 @@
+.extclass{
+            background-color: GREEN;
+            height: 50vh;
+            font-size: 10em;
+            font-family: sans-serif;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+}

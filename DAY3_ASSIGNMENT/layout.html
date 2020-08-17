@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+
+    }
+
+    .parent{
+        background-color: tomato;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head{
+        background-color: green;
+        flex: 1;
+    }
+
+    .bdy{
+        background-color: hotpink;
+        flex: 10;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .foot{
+        background-color: indigo;
+        flex: 1;
+    }
+    
+
+</style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="head"> Header</div>
+        <div class="bdy">
+            <div style= "background-color: gold; flex:1">a</div>
+            <div style="background-color: white; flex:3">b</div>
+            <div style="background-color: orange;flex:1">c</div>
+         </div>
+        <div class="foot"> Footer</div>
+    </div>
+</body>
+
+</html>
