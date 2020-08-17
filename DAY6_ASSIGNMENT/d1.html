@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--Get your own code at fontawesome.com-->
+
+    <title>Hello, world!</title>
+    <script src="d1.js"></script>
+</head>
+
+<body style="background-color:rgb(155, 252, 195);">
+    <div class="container-fluid">
+        <!-- row 1 -->
+        <div class="row  mt-5 " style="height: 70vh;">
+
+            <div class="col-1 " style="background-color:rgb(155, 252, 195);"></div>
+
+            <!-- mobile1 -->
+
+            <!-- row1 -->
+            <div class="col-4 bg-primary">
+                <div class="row" style="height: 10vh; background-color: rgb(26, 190, 122);">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <i class='fas fa-arrow-circle-left' style='font-size:48px;color:white'></i>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div>
+                            <img style="width:50px; border: solid white ;border-radius: 50px; " src="img.jpg " alt=" ">
+                        </div>
+                    </div>
+                    <div class="col-6 text-light d-flex justify-content-center align-items-center font-weight-bold">
+                        Sachin Tendulkar</div>
+                    <div class="col-2  d-flex justify-content-center align-items-center "><i class='fas fa-phone-alt'
+                            style='font-size:38px;color:white'></i></div>
+                </div>
+
+
+                <!-- row2 -->
+                <div class="row " id="commentBox" style="height: 50vh; background-color:rgb(177, 192, 183);">
+                    <div id="refid" class="">
+                        <div style=" margin: 2px;padding: 3px;">
+                            sample comment</div>
+                    </div>
+
+                </div>
+
+
+                <!-- row3 -->
+                <div class="row" style="height:10vh; background-color:rgb(26, 190, 122);">
+                    <div class="col-2 d-flex justify-content-center align-items-center "><i class='far fa-smile'
+                            onclick="comdelete(this)" style='font-size:48px;color:white'></i></div>
+                    <div class="col-8 d-flex justify-content-center align-items-center p-0 "><input id="inp1"
+                            class="form-control " type="text " placeholder="typehere ">
+                    </div>
+                    <div class="col-2 d-flex flex-column justify-content-center align-items-center "><i
+                            class='fas fa-arrow-circle-right' onclick="post()" style='font-size:48px;color:white'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-2 ">
+
+
+
+
+            </div>
+
+            <!-- Mobile2 -->
+            <!-- row1 -->
+            <div class="col-4 bg-primary ">
+                <div class="row " style="height: 10vh; background-color: rgb(26, 190, 122); ">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <i class='fas fa-arrow-circle-left' style='font-size:48px;color:white'></i>
+                    </div>
+                    <div class="col-2 mt-1">
+                        <div>
+                            <img style="width:50px; border: solid ;border-radius: 50px; " src="img.jpg " alt=" ">
+                        </div>
+                    </div>
+                    <div class="col-6 text-light d-flex justify-content-center align-items-center font-weight-bold">
+                        Virat Kohli</div>
+                    <div class="col-2  d-flex justify-content-center align-items-center "><i class='fas fa-phone-alt'
+                            style='font-size:38px;color:white'></i></div>
+                </div>
+
+                <!-- row2 -->
+                <div class="row " id="commentBox" style="height: 50vh; background-color:rgb(177, 192, 183);">
+                    <div id="refid2" class="">
+                        <div style=" margin: 2px;padding: 3px;">
+                            sample comment</div>
+                    </div>
+
+                </div>
+
+
+                <!-- row3 -->
+                <div class=" row " style="height: 10vh; background-color:  rgb(26, 190, 122); ">
+                    <div class="col-2 d-flex justify-content-center align-items-center "><i class='far fa-smile'
+                            style='font-size:48px;color:white'></i></div>
+                    <div class="col-8 d-flex justify-content-center align-items-center p-0 "><input id="inp2"
+                            class="form-control " type="text " placeholder="typehere ">
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center "><i
+                            class='fas fa-arrow-circle-right' onclick="post2()" style='font-size:48px;color:white'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 "></div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

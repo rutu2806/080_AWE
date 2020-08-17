@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="1.js"></script>
+
+    <title>PROJECT</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark" style="height: 70px;"></div>
+
+        <div class="row mt-2" style="height:300px;">
+            <!-- col-1 -->
+            <div class="col-4 bg-primary pt-5">
+
+                <input class="form-control " id="usn" type="text" placeholder="Username">
+                <input class="form-control mt-2" id="psw" type="text" placeholder="Password">
+                <button onclick="submit()" type="button"
+                    class="btn btn-outline-success btn-sm btn-block mt-4 text-light">Submit</button>
+
+            </div>
+
+
+            <!-- col-2 -->
+            <div class="col-4 bg-secondary pt-5">
+                <div>
+                    <button id="thumpsup" onclick="like()" type="button" class="btn btn-primary ">&#128077</button>
+
+                    <button id="thumpsdown" onclick="dislike()" type="button"
+                        class="btn btn-success  ">&#128078</button>
+                </div>
+
+                <input class="mt-4 form-control" id="comment1" type="text" placeholder="Comment here">
+
+                <button type="button" onclick="commentBox()"
+                    class="btn btn-outline-success btn-sm btn-block mt-4 text-light">Comment</button>
+
+            </div>
+            <!-- col-3 -->
+            <div class="col-4 bg-success">
+                <div id="outputcomment">
+
+                    <div id="commentContainer">
+
+                        <div id="comment" style="border: rgb(133, 202, 133) solid;border-radius:5px;margin-top: 10px;">
+                            Sample Comment
+                        </div>
+                        <button onclick="remove(this)" id="rem" class=" btn-danger btn-sm  text-light">Delete</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

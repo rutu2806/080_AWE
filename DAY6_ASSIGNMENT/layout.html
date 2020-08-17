@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 5vh;
+            background-color: rgb(46, 39, 38);
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            align-items: center;
+
+        }
+
+        .mainbody {
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            background-color: rgb(92, 85, 84);
+            align-items: center;
+            justify-content: center;
+        }
+
+        #like {
+            margin: 10px;
+        }
+
+        #dislike {
+            margin: 10px;
+        }
+
+        .likdis {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    <script src="layout.js"></script>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="nav">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Sign in</div>
+        </div>
+
+        <div class="mainbody">
+
+            <div>
+                <div>
+                    <input type="text" id="inp" placeholder="Type here">
+                    <button onclick="comment()">Comment</button>
+                </div>
+            </div>
+
+            <div class="likdis">
+                <button id="like" onclick="like()">Like 1</button>
+                <button id="dislike" onclick="Dislike()">Dislike 1</button>
+            </div>
+
+            <div id="commentDiv">
+                <div id="placeComment">Place the value</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        .gparent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(170, 190, 196);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            border: rgb(107, 114, 119) solid;
+            border-width: 10px;
+            border-radius: 10px;
+
+
+        }
+
+        #num1 {
+            flex: 1;
+
+        }
+
+        #num2 {
+            flex: 1;
+
+        }
+
+        #answer {
+            flex: 1;
+
+        }
+
+        .operator {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+        }
+
+        #submit1 {
+            flex: 1;
+        }
+
+        .heading {
+
+            border: solid rgb(117, 122, 110);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            color: rgb(71, 65, 65);
+
+        }
+    </style>
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <div class="gparent">
+        <div class="parent">
+            <div class="heading">CALCULATOR</div>
+            <div id="num1"><input type="text" id="num11" placeholder="number1"></div>
+            <div id="num2"><input type="text" id="num22" placeholder="number2"></div>
+            <div id="answer"><input type="text" id="ans33" placeholder="answer"></div>
+
+            <div class="operator">
+                <div id="add" onclick="add()"><input type="button" value="+"></div>
+                <div id="sub" onclick="sub()"><input type="button" value="-"></div>
+                <div id="mul" onclick="mul()"><input type="button" value="*"></div>
+                <div id="div" onclick="div()"><input type="button" value="/"></div>
+            </div>
+            <div onclick="compute()"><input type="submit" value="submit"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
